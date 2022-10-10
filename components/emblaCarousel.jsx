@@ -4,6 +4,8 @@ import useEmblaCarousel from "embla-carousel-react";
 
 import Autoplay from "embla-carousel-autoplay";
 
+import styles from './compStyles/emblacarousel.module.css'
+
 
 const EmblaCarousel = () => {
 
@@ -21,17 +23,17 @@ const EmblaCarousel = () => {
 
 
     return (
-        <div ref={emblaRef }>
-            <div>
-                <h1>1</h1>
-                <h1>2</h1>
-                <h1>3</h1>
-                <h1>4</h1>
-                <h1>5</h1>
-                <h1>6</h1>
-                <h1>7</h1>
-            </div>
+      <div className={styles.embla} ref={emblaRef}>
+        <div className={styles.embla__container}>
+          <h1 className={styles.embla__slide}>1</h1>
+          <h1 className={styles.embla__slide}>2</h1>
+          <h1 className={styles.embla__slide}>3</h1>
+          <h1 className={styles.embla__slide}>4</h1>
+          <h1 className={styles.embla__slide}>5</h1>
+          <h1 className={styles.embla__slide}>6</h1>
+          <h1 className={styles.embla__slide}>7</h1>
         </div>
+      </div>
     );
 }
 
