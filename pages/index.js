@@ -18,7 +18,7 @@ export default function Home() {
       </Head>
 
       <div>
-        <h3>here is the home page</h3>
+        
         <EmblaCarousel/>
       </div>
     </div>

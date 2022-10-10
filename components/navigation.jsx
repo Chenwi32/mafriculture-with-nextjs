@@ -1,7 +1,19 @@
+import Image from "next/image";
+import Link from "next/link";
+
 const Navigation = () => {
     return (
         <div>
-            <h1>This is the navigation bar</h1>
+            <div className="container">
+                <div className="logo">
+                <Link href='/'>
+                    <Image src='/logo.png'
+                    width={100}
+                    height={50 } />
+                </Link>
+            </div>
+            </div>
+            
         </div>
     );
 }

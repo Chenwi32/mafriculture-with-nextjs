@@ -17,6 +17,37 @@ a {
   padding: 0;
 }
 
+.container{
+  max-width: 1200px;
+  margin: auto;
+}
+
+.flex{
+  display: flex;
+}
+
+.flex_col{
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  border: none;
+  text-align: center;
+  background-color: #444545;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 3px;
+  max-width: 150px;
+}
+
+.btn:hover {
+  background-color: #313131;
+}
+
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
