@@ -1,0 +1,9 @@
+.nav_container{
+    align-items: center;
+    justify-content: space-between;
+padding: .5em;
+}
+
+.nav_link{
+    margin: 0 1em 0 0;
+}
