@@ -1,7 +1,16 @@
+.navigation{
+    color: rgb(236, 31, 4)
+}
+
 .nav_container{
     align-items: center;
     justify-content: space-between;
 padding: .5em;
+}
+
+.logo{
+    background-color: #fff;
+    padding: .5rem 0 0;
 }
 
 .nav_link{

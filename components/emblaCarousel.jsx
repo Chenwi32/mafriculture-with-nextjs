@@ -14,7 +14,7 @@ const EmblaCarousel = () => {
       loop: false,
       speed: 10,
     },
-    [Autoplay({ delay: 10000, stopOnInteraction: false })]
+    [Autoplay({ delay: 6000, stopOnInteraction: false })]
   );
 
   useEffect(() => {
@@ -31,16 +31,22 @@ const EmblaCarousel = () => {
             <div className={`${styles.carousel_text} flex_col`}>
               <h2>Latest Product</h2>
               <h3>Small floor flower vase</h3>
-              <p>This small floor vase, about 40cm high</p>
+              <p>This small floor vase, about 40cm high
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos animi necessitatibus inventore dignissimos aut nesciunt saepe officiis veniam dolor, eius quod fugiat magni, amet nemo accusantium obcaecati minus ad tenetur?
+              </p>
               <Link href="/products">
                 <a className="btn">Shop Now</a>
               </Link>
             </div>
-            <Image
-              src="/images/feature_product1.jpg"
-              width={400}
-              height={500}
-            />
+
+            <div className={styles.image}>
+              <Image
+                src="/images/feature_product1.jpg"
+                width={400}
+                height={500}
+              />
+            </div>
           </div>
         </div>
         <div className={`${styles.embla__slide2} `}>
@@ -48,12 +54,23 @@ const EmblaCarousel = () => {
             <div className={`${styles.carousel_text} flex_col`}>
               <h2>Featured Product</h2>
               <h3>Bowl shaped vase</h3>
-              <p></p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Quisquam.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque unde aliquam, minima quod officiis a ullam delectus iure, veritatis consequatur eos expedita. Soluta sapiente maiores necessitatibus itaque id voluptatem est.
+              </p>
               <Link href="/products">
                 <a className="btn">Learn more</a>
               </Link>
             </div>
-            <Image src="/images/feature_product.jpg" width={400} height={400} />
+
+             <div className={styles.image}>
+              <Image
+                src="/images/feature_product.jpg"
+                width={400}
+                height={500}
+              />
+            </div> 
           </div>
         </div>
       </div>

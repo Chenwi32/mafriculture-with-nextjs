@@ -37,14 +37,28 @@ a {
   background-color: #444545;
   color: #fff;
   font-weight: 600;
-  padding: 0.5rem 1rem;
+  padding:  1rem;
   cursor: pointer;
-  border-radius: 3px;
+  border-radius: 5px;
   max-width: 150px;
 }
 
 .btn:hover {
   background-color: #313131;
+}
+
+.btn2 {
+  border: none;
+  background-color: rgb(236, 31, 4);
+  color: #fff;
+  font-weight: 600;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn2:hover {
+  background-color: rgb(199, 28, 5);
 }
 
 

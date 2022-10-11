@@ -4,11 +4,13 @@ import styles from "./compStyles/navigation.module.css";
 
 const Navigation = () => {
   return (
-    <div>
+    <div className={styles.navigation}>
       <div className={`${styles.nav_container} container flex`}>
+
+
         <div className={styles.logo}>
           <Link href="/">
-            <Image src="/logo.png" width={100} height={50} />
+            <Image src="/logo.png" width={60} height={50} />
           </Link>
         </div>
 
