@@ -2,6 +2,16 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./compStyles/navigation.module.css";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+
+// imports icons for this component
+import {
+  faSearch,
+  faCartPlus
+} from "@fortawesome/free-solid-svg-icons";
+
+
 const Navigation = () => {
   return (
     <div className={styles.navigation}>
@@ -16,15 +26,33 @@ const Navigation = () => {
         </Link>
         <div className={styles.link}>
           <Link href="/products">
+            <a className={styles.nav_link}>
+              <FontAwesomeIcon
+                icon={faSearch}
+                /* style={{ fontSize: 100, color: "blue" } */
+              />
+            </a>
+          </Link>
+
+          <Link href="/products">
             <a className={styles.nav_link}>Products</a>
           </Link>
 
           <Link href="/products">
-            <a className={styles.nav_link}>Cart</a>
+            <a className={`${styles.nav_link} btn`}>Contact</a>
           </Link>
 
           <Link href="/products">
-            <a className={`${styles.nav_link} btn`}>Contact</a>
+            <a className={'/* styles.nav_link */'}>
+              <FontAwesomeIcon
+                icon={faCartPlus}
+                /* style={{ fontSize: 100, color: "blue" } */
+              />
+              <span className="mg-l">
+                Cart
+              </span>
+              
+            </a>
           </Link>
         </div>
       </div>

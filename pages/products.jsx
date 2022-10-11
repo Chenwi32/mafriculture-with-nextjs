@@ -1,9 +1,12 @@
 const Procuts = () => {
     return (
         <div>
-            <h2>
+            <div className="container">
+              <h2>
                 This is the product page
-            </h2>
+            </h2>  
+            </div>
+            
         </div>
 
 

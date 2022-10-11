@@ -5,6 +5,8 @@
 
 .embla__container {
   display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .embla__slide {
@@ -29,18 +31,19 @@ background:
 .embla__slide{
   width: 100%;
   height: fit-content;
+  min-height: 80vh;
   position: relative;
   flex: 0 0 100%;
   font-size: 1.5rem;
-  color: #fff;
+  color: var(--complementry-color);
 }
 
 .embla__slide_container {
   height: 100%;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  margin: 0;
   align-items: center;
-  padding: 1rem;
 }
 
 .carousel_text {
@@ -67,6 +70,54 @@ background:
   width: fit-content;
   margin: auto;
 }
+
+.carousel_text1 {
+  justify-content: flex-start;
+  padding: 1rem;
+  background-color: rgba(51, 51, 51, 0.11);
+ font-size: 1rem;
+  min-height: 60vh;
+  width: 100%;
+  height: fit-content;
+  margin: 2em 1em 0;
+  justify-content: flex-start;
+
+  align-items: flex-start;
+}
+
+.banner_text {
+  height: 100%;
+  margin: auto;
+  justify-content: space-between;
+  width: 50%;
+  margin-right: 2em;
+}
+
+.banner_container h1 {
+  font-size: 2em;
+}
+
+.quotes {
+  font-size: 1.5em;
+  margin-left: 0;
+  z-index: 2;
+  line-height: 1.5;
+}
+
+.animated_text {
+  margin-top: 1.5rem;
+  font-size: 1.5em;
+}
+
+.a {
+  color: #444545;
+  font-size: 1.3em;
+}
+
+/* .m {
+  color: rgb(236, 31, 4);
+}
+ */
 
 @media (max-width: 700px){
 

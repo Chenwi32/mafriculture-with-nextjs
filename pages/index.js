@@ -18,8 +18,22 @@ export default function Home() {
       </Head>
 
       <div>
-        
-        <EmblaCarousel/>
+        <EmblaCarousel />
+
+        <div class="container">
+          <div class="description panel blue">
+            <div>
+              SCROLL DOWN
+              <div class="scroll-down">
+                <div class="arrow"></div>
+              </div>
+            </div>
+          </div>
+
+          <section class="panel red">ONE</section>
+          <section class="panel orange">TWO</section>
+          <section class="panel purple">THREE</section>
+        </div>
       </div>
     </div>
   );

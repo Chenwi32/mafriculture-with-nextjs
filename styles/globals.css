@@ -9,7 +9,9 @@ body {
 :root{
   --primary-color: rgb(236, 31, 4);
   --secondary-color: #444545;
-  --button-text-color: #fff;
+  --complementry-color: #fff;
+  --vertical-margin: 1em 0;
+  --horizontal-margin: 0 1em;
 }
 
 a {
@@ -32,6 +34,25 @@ a {
   display: flex;
 }
 
+.mg-h{
+  margin: var(--horizontal-margin);
+}
+.mg-v{
+  margin: var(--vertical-margin);
+}
+.mg-t{
+  margin: .5em 0 0 0;
+}
+.mg-r{
+  margin: 0 .5em 0 0;
+}
+.mg-l{
+  margin: 0 0 0 .5em;
+}
+.mg-b{
+  margin: 0 0 .5em 0;
+}
+
 .flex_col{
   display: flex;
   flex-direction: column;
@@ -40,8 +61,8 @@ a {
 .btn {
   border: none;
   text-align: center;
-  background-color: #444545;
-  color: var(--button-text-color);
+  background-color: var(--secondary-color);
+  color: var(--complementry-color);
   font-weight: 600;
   padding:  .7em;
   cursor: pointer;
@@ -55,8 +76,8 @@ a {
 
 .btn2 {
   border: none;
-  background-color: rgb(236, 31, 4);
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--complementry-color);
   font-weight: 800;
   padding: .7em;
   cursor: pointer;
@@ -64,7 +85,7 @@ a {
 }
 
 .btn2:hover {
-  background-color: rgb(199, 28, 5);
+  background-color: rgb(212, 28, 4);
 }
 
 
