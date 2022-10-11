@@ -1,16 +1,28 @@
 .navigation{
-    color: rgb(236, 31, 4)
+    color: rgb(236, 31, 4);
+    padding: .7em;
+    font-size: .9rem;
 }
 
 .nav_container{
     align-items: center;
     justify-content: space-between;
-padding: .5em;
+}
+
+.logo_container{
+    align-items: center;
+    cursor: pointer;
 }
 
 .logo{
     background-color: #fff;
-    padding: .5rem 0 0;
+}
+
+.logo_tex{
+    padding: .2em;
+    color: #444545;
+    font-weight: 800;
+    font-size: 1.4rem;
 }
 
 .nav_link{
