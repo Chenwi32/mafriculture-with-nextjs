@@ -13,7 +13,7 @@ import {
 
 
 const Navigation = () => {
-  const imageloader = require("../imageLoader");
+  const imageloader = require("../imageLoader.js");
 
   return (
     <div className={styles.navigation}>
@@ -21,7 +21,12 @@ const Navigation = () => {
         <Link href="/">
           <div className={`${styles.logo_container} flex`}>
             <div className={styles.logo}>
-              <Image loader={imageloader} src="logo.jpg" width={40} height={30}  />
+              <Image
+                src="logo.jpg"
+                width={40}
+                height={30}
+                loader={imageloader}
+              />
             </div>
             <span className={styles.logo_tex}>MAfriculture</span>
           </div>
@@ -45,12 +50,11 @@ const Navigation = () => {
           </Link>
 
           <Link href="/products">
-            <a className={'/* styles.nav_link */'}>
+            <a className={"/* styles.nav_link */"}>
               <FontAwesomeIcon
                 icon={faCartPlus}
                 /* style={{ fontSize: 100, color: "blue" } */
               />
-              
             </a>
           </Link>
         </div>
