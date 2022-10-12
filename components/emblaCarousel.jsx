@@ -47,7 +47,7 @@ const EmblaCarousel = () => {
               <Image
                 src="/images/feature_product1.jpg"
                 width={400}
-                height={500}
+                height={600}
               />
             </div>
           </div>

@@ -4,19 +4,16 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-
 }
 
-:root{
+:root {
   --primary-color: rgb(236, 31, 4);
   --secondary-color: #444545;
   --complementry-color: #fff;
-  --vertical-margin: 1em 0;
-  --horizontal-margin: 0 1em;
 }
 
 a {
-  color: inherit;
+  color: var(--primary-color);
   text-decoration: none;
 }
 
@@ -26,46 +23,109 @@ a {
   padding: 0;
 }
 
-.container{
+.container {
   max-width: 1200px;
   margin: auto;
 }
 
-.flex{
+.flex {
   display: flex;
 }
 
-.mg-h{
-  margin: var(--horizontal-margin);
-}
-.mg-v{
-  margin: var(--vertical-margin);
-}
-.mg-t{
-  margin: .5em 0 0 0;
-}
-.mg-r{
-  margin: 0 .5em 0 0;
-}
-.mg-l{
-  margin: 0 0 0 .5em;
-}
-.mg-b{
-  margin: 0 0 .5em 0;
+.flex-a-c {
+  display: flex;
+  align-items: center;
 }
 
-.flex_col{
+.flex-a-t {
+  display: flex;
+  align-items: flex-start;
+}
+
+.flex-a-b {
+  display: flex;
+  align-items: flex-end;
+}
+
+.flex-j-c {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-j-c-sb {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex_col {
   display: flex;
   flex-direction: column;
 }
+
+/*------ Margin ------*/
+.mg{
+  margin: 1rem;
+}
+.mg-h {
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+.mg-v {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.mg-t {
+  margin-top: 1.5rem;
+}
+.mg-r {
+  margin-right: 1.5rem;
+}
+.mg-l {
+  margin-left: 1.5rem;
+}
+.mg-b {
+  margin-bottom: 1.5rem;
+}
+
+/*---- Padding ----*/
+.pd{
+  padding: 1rem;
+}
+.pd-h {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.pd-v {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.pd-t {
+  padding-top: 1rem;
+}
+.pd-r {
+  padding-right: 1rem;
+}
+.pd-l {
+  padding-left: 1rem;
+}
+.pd-b {
+  padding-bottom: 1rem;
+}
+
 
 .btn {
   border: none;
   text-align: center;
   background-color: var(--secondary-color);
   color: var(--complementry-color);
-  
-  padding:  .5em .6em;
+
+  padding: 0.5em 0.6em;
   cursor: pointer;
   border-radius: 5px;
   max-width: 150px;
@@ -80,7 +140,7 @@ a {
   background-color: var(--primary-color);
   color: var(--complementry-color);
   font-weight: 800;
-  padding: .7em;
+  padding: 0.7em;
   cursor: pointer;
   border-radius: 5px;
 }
@@ -88,7 +148,6 @@ a {
 .btn2:hover {
   background-color: rgb(212, 28, 4);
 }
-
 
 @media (prefers-color-scheme: dark) {
   html {

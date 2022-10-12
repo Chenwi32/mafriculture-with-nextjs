@@ -31,7 +31,8 @@ background:
 .embla__slide{
   width: 100%;
   height: fit-content;
-  min-height: 80vh;
+  min-height: 85vh;
+  max-height: 85vh;
   position: relative;
   flex: 0 0 100%;
   font-size: 1.5rem;
