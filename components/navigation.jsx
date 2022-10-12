@@ -20,7 +20,7 @@ const Navigation = () => {
         <Link href="/">
           <div className={`${styles.logo_container} flex`}>
             <div className={styles.logo}>
-              <Image src="/logo.png" width={40} height={30} loader={imageLoader } />
+              <Image src="logo.png" width={40} height={30} loader={imageLoader } />
             </div>
             <span className={styles.logo_tex}>MAfriculture</span>
           </div>
