@@ -1,8 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
 import EmblaCarousel from "../components/emblaCarousel";
+import HorizontalScrolling from "../components/horizontalScrolling";
+import NewestProduct from "../components/newestProduct";
 import styles from "../styles/Home.module.css";
-
 
 export default function Home() {
 
@@ -20,20 +21,9 @@ export default function Home() {
       <div>
         <EmblaCarousel />
 
-        <div class="container">
-          <div class="description panel blue">
-            <div>
-              SCROLL DOWN
-              <div class="scroll-down">
-                <div class="arrow"></div>
-              </div>
-            </div>
-          </div>
+        <NewestProduct/>
 
-          <section class="panel red">ONE</section>
-          <section class="panel orange">TWO</section>
-          <section class="panel purple">THREE</section>
-        </div>
+        <HorizontalScrolling/>
       </div>
     </div>
   );

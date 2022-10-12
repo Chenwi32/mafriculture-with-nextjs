@@ -36,6 +36,7 @@ background:
   flex: 0 0 100%;
   font-size: 1.5rem;
   color: var(--complementry-color);
+  padding: 1em;
 }
 
 .embla__slide_container {

@@ -48,9 +48,6 @@ const Navigation = () => {
                 icon={faCartPlus}
                 /* style={{ fontSize: 100, color: "blue" } */
               />
-              <span className="mg-l">
-                Cart
-              </span>
               
             </a>
           </Link>

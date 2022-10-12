@@ -1,0 +1,21 @@
+.h_scrolling{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1em;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+
+    scroll-snap-type: inline mandatory;
+    scroll-padding: 1rem;
+} 
+
+.h_scrolling > *{
+    scroll-snap-align: start;
+} 
+
+.scroll_item{
+    background-color: pink;
+    min-height: 300px;
+    min-width: 300px;
+}
+

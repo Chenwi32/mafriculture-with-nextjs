@@ -26,37 +26,6 @@ const EmblaCarousel = () => {
   return (
     <div className={styles.embla} ref={emblaRef}>
       <div className={`${styles.embla__container}`}>
-        <div className={`${styles.embla__slide2} `}>
-          <div className={`${''} container flex`}>
-            <div className={`${styles.carousel_text1} flex `}>
-              <div className={`${''} flex`}>
-                <div className="banner-text">
-                  <h1 id="backToTop">
-                    <em>M</em>Africulture
-                  </h1>
-
-                    <p>
-                      There Is Beauty In Everything — <br />
-                      African Fashion Is Never An Exception.
-                      <br />
-                      <strong>Give The African Style A Try!</strong>
-                    </p>
-
-                    <p className="feel hide" id="feel">
-                      <strong>“FEEL THE ROYALTY”</strong>
-                    </p>
-                    <p className="hide" id="priority">
-                      <strong>
-                        <em>Your Satisfaction, Our Priority!</em>
-                      </strong>
-                    </p>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <div className={`${styles.embla__slide} `}>
           <div className={`${styles.embla__slide_container} container flex`}>
             <div className={`${styles.carousel_text} flex_col`}>
@@ -107,6 +76,36 @@ const EmblaCarousel = () => {
                 width={400}
                 height={500}
               />
+            </div>
+          </div>
+        </div>
+
+        <div className={`${styles.embla__slide2} `}>
+          <div className={`${""} container flex`}>
+            <div className={`${styles.carousel_text1} flex `}>
+              <div className={`${""} flex`}>
+                <div className="banner-text">
+                  <h1 id="backToTop">
+                    <em>M</em>Africulture
+                  </h1>
+
+                  <p>
+                    There Is Beauty In Everything — <br />
+                    African Fashion Is Never An Exception.
+                    <br />
+                    <strong>Give The African Style A Try!</strong>
+                  </p>
+
+                  <p className="feel hide" id="feel">
+                    <strong>“FEEL THE ROYALTY”</strong>
+                  </p>
+                  <p className="hide" id="priority">
+                    <strong>
+                      <em>Your Satisfaction, Our Priority!</em>
+                    </strong>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
