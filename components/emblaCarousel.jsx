@@ -47,7 +47,7 @@ const EmblaCarousel = () => {
 
             <div className={styles.image}>
               <Image
-                src="/images/feature_product1.jpg"
+                src="feature_product1.jpg"
                 width={400}
                 height={600}
                 loader={imageloader}
@@ -75,7 +75,7 @@ const EmblaCarousel = () => {
 
             <div className={styles.image}>
               <Image
-                src="/images/feature_product.jpg"
+                src="feature_product.jpg"
                 width={400}
                 height={500}
                 loader={imageloader}
