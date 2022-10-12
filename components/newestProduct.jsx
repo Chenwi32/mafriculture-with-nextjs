@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import imageLoader from "../imageLoader";
 import styles from "./compStyles/newest.module.css";
 
 const NewestProduct = () => {
   return (
     <div className={`container flex-a-t mg-v pd ${styles.newest_container}`}>
       <div className={` ${styles.newest_image}`}>
-        <Image src="/images/newest.jpg" width={700} height={700} />
+        <Image src="/images/newest.jpg" width={700} height={700} loader={imageLoader} />
       </div>
 
       <div className={` pd ${styles.newest_text}`}>

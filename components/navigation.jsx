@@ -10,6 +10,7 @@ import {
   faSearch,
   faCartPlus
 } from "@fortawesome/free-solid-svg-icons";
+import imageLoader from "../imageLoader";
 
 
 const Navigation = () => {
@@ -19,7 +20,7 @@ const Navigation = () => {
         <Link href="/">
           <div className={`${styles.logo_container} flex`}>
             <div className={styles.logo}>
-              <Image src="/logo.png" width={40} height={30} />
+              <Image src="/logo.png" width={40} height={30} loader={imageLoader } />
             </div>
             <span className={styles.logo_tex}>MAfriculture</span>
           </div>

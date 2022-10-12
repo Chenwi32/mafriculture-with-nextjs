@@ -23,6 +23,8 @@ const EmblaCarousel = () => {
     }
   }, [emblaApi]);
 
+  const imageloader = require('../imageLoader.js')
+
   return (
     <div className={styles.embla} ref={emblaRef}>
       <div className={`${styles.embla__container}`}>
@@ -48,6 +50,7 @@ const EmblaCarousel = () => {
                 src="/images/feature_product1.jpg"
                 width={400}
                 height={600}
+                loader={imageloader}
               />
             </div>
           </div>
@@ -75,6 +78,7 @@ const EmblaCarousel = () => {
                 src="/images/feature_product.jpg"
                 width={400}
                 height={500}
+                loader={imageloader}
               />
             </div>
           </div>
