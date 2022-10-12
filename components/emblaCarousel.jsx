@@ -80,13 +80,16 @@ const EmblaCarousel = () => {
           </div>
         </div>
 
-        <div className={`${styles.embla__slide2} `}>
+        <div className={`${styles.embla__slide3} `}>
           <div className={`${""} container flex`}>
             <div className={`${styles.carousel_text1} flex `}>
-              <div className={`${""} flex`}>
+              <div>
                 <div className="banner-text">
                   <h1 id="backToTop">
-                    <em>M</em>Africulture
+                    <span className={styles.m}>
+                      <em>M</em>
+                    </span>
+                    <span className={styles.a}>A</span> friculture
                   </h1>
 
                   <p>
