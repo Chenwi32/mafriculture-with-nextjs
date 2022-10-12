@@ -10,17 +10,18 @@ import {
   faSearch,
   faCartPlus
 } from "@fortawesome/free-solid-svg-icons";
-import imageLoader from "../imageLoader";
 
 
 const Navigation = () => {
+  const imageloader = require("../imageLoader");
+
   return (
     <div className={styles.navigation}>
       <div className={`${styles.nav_container} container flex`}>
         <Link href="/">
           <div className={`${styles.logo_container} flex`}>
             <div className={styles.logo}>
-              <Image src="logo.png" width={40} height={30} loader={imageLoader } />
+              <Image src="logo.png" width={40} height={30} loader={imageloader } />
             </div>
             <span className={styles.logo_tex}>MAfriculture</span>
           </div>
