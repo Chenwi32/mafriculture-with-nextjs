@@ -89,7 +89,7 @@ const Footer = () => {
             </a>
 
             <span className={styles.tooltiptext}>
-              Chat with us
+              Whatsapp us
             </span>
           </div>
         </div>

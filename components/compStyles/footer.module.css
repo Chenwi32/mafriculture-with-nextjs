@@ -91,4 +91,10 @@
     top: 75vh;
     right: 2rem;
   }
+
+
+.hover__message .tooltiptext,
+.hover__message .tooltiptext::after {
+  display: none;
+}
 }

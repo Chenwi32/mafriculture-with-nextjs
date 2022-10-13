@@ -31,3 +31,25 @@
 .nav_link{
     margin: 0 1em 0 0;
 }
+
+/*------ Toggle menu -------*/
+.nav__bar__btn {
+    height: fit-content;
+    width: 45px;
+    padding: 0.2em 0.5em;
+    box-shadow: 0 0 5px rgba(15, 15, 15, 0.575);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar{
+    height: 3px;
+    width: 100%;
+    background-color: var(--secondary-color);
+    margin: 0.2rem;
+    transition: all 1s ease;
+}
+
