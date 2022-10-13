@@ -1,3 +1,7 @@
+.footer_left{
+    width: 60%;
+}
+
 .social{
     min-height: 100px;
     position: relative;
@@ -19,6 +23,6 @@
     background-color: var(--secondary-color);
     padding: .5rem .7rem;
     
-    top: 70vh;
+    top: 75vh;
     right: 4rem;
 }

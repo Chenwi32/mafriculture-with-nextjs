@@ -4,10 +4,15 @@
     gap: 1em;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
-
     scroll-snap-type: inline mandatory;
     scroll-padding: 1rem;
 } 
+
+/* 
+Removing scroll bar
+.h_scrolling::-webkit-scrollbar {
+     display: none;
+}  */
 
 .h_scrolling > *{
     scroll-snap-align: start;

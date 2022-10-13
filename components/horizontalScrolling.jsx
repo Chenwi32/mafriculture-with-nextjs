@@ -1,16 +1,9 @@
 
-import React, {useEffect} from "react";
+import React from "react";
 import styles from "./compStyles/horizontalScrolling.module.css";
 
 
-
-
-
 const HorizontalScrolling = () => {
-
-
-
-
 
   return (
     <div className={` container  mg-v`}>

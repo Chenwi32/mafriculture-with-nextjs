@@ -1,19 +1,47 @@
-import styles from './compStyles/footer.module.css'
+import styles from "./compStyles/footer.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faInstagram, faPinterest, faTwitter, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-
+import {
+  faFacebook,
+  faInstagram,
+  faPinterest,
+  faTwitter,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
+import Link from "next/link";
 
 const Footer = () => {
   return (
     <div className="">
       <div className={`container flex-j-sb flex-a-c ${""}`}>
-        <h1>This is the footer</h1>
+        <div className={`flex-a-c flex-j-sb ${styles.footer_left}`}>
+          <p>
+            <small>
+              Copyright &#x00A9; MAfriculture<sup>&#x00AE;</sup> 2022{" "}
+            </small>
+            | <small>All rights reserved</small>
+          </p>
+
+          <div className={`flex-a-c ${styles.footer_left_links}`}>
+            <Link href=''>
+              <a className="mg-r" >
+              <small>Terms & Conditions</small>
+            </a>
+            </Link>
+            
+            <Link href=''>
+              <a>
+              <small>Privacy Policy</small>
+            </a>
+            </Link>
+            
+            
+          </div>
+        </div>
 
         <div className={`flex-a-t flex_col ${styles.social}`}>
+          <small className="mg-s-b">Follow us</small>
 
-          <p className='mg-s-b'>Follow us</p>
-
-          <div>
+          <div className="flex-a-c">
             <a href="" className={` mg-r ${styles.link}`}>
               <FontAwesomeIcon icon={faFacebook} />
             </a>
