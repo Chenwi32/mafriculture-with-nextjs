@@ -150,9 +150,9 @@ padding: 0;
   background-color: rgba(49, 49, 49, 0.11);
 
   min-height: 60vh;
-  width: 85%;
+  width: 95%;
   height: fit-content;
-  top: 1.5rem;
-  left: 1.5rem;
+  top: 1rem;
+  left: .4rem;
 }
 }

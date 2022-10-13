@@ -34,38 +34,36 @@ a {
 
 
 .flex-a-c {
-  display: flex;
+  
   align-items: center;
 }
 
 .flex-a-t {
-  display: flex;
+
   align-items: flex-start;
 }
 
 .flex-a-b {
-  display: flex;
+ 
   align-items: flex-end;
 }
 
 .flex-j-c {
-  display: flex;
+
   justify-content: center;
 }
 
 .flex-j-sb {
-  display: flex;
+
   justify-content: space-between;
 }
 
 .flex-center {
-  display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .flex_col {
-  display: flex;
   flex-direction: column;
 }
 
