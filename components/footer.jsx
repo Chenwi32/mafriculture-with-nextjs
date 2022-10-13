@@ -12,7 +12,9 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div className="">
-      <div className={`container flex flex-j-sb flex-a-c ${styles.footer_container}`}>
+      <div
+        className={`container flex flex-j-sb flex-a-c ${styles.footer_container}`}
+      >
         <div className={`flex  flex-j-sb  ${styles.footer_left}`}>
           <p>
             <small>
@@ -36,7 +38,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className={` flex flex-a-t  flex_col mg-s-b pd-s-v ${styles.social}`}>
+        <div
+          className={` flex flex-a-t  flex_col mg-s-b pd-s-v ${styles.social}`}
+        >
           <small className="mg-s-b">Follow us</small>
 
           <div className="flex flex-a-c ">
@@ -73,14 +77,21 @@ const Footer = () => {
               <FontAwesomeIcon icon={faPinterest} />
             </a>
           </div>
-          <a
-            href="https://wa.me/237655078817"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={` ${styles.link} ${styles.whatsapp}`}
-          >
-            <FontAwesomeIcon icon={faWhatsapp} />
-          </a>
+
+          <div className={`${styles.hover__message}`}>
+            <a
+              href="https://wa.me/237655078817"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={` ${styles.link} ${styles.whatsapp}`}
+            >
+              <FontAwesomeIcon icon={faWhatsapp} />
+            </a>
+
+            <span className={styles.tooltiptext}>
+              Chat with us
+            </span>
+          </div>
         </div>
       </div>
     </div>
