@@ -7,7 +7,13 @@ const NewestProduct = () => {
   return (
     <div className={`container flex-a-t mg-v pd ${styles.newest_container}`}>
       <div className={` ${styles.newest_image}`}>
-        <Image src="newest.jpg" width={700} height={700} loader={imageLoader} />
+        <Image
+          src="newest.jpg"
+          width={700}
+          height={700}
+          loader={imageLoader}
+          alt="floor vase"
+        />
       </div>
 
       <div className={` pd ${styles.newest_text}`}>
@@ -25,8 +31,12 @@ const NewestProduct = () => {
         </Link>
 
         <p className="mg-v">
-          Talk to our customer service one-on-one on whastapp{' '}
-          <a target="blank" href="https://wa.me/message/MVX754UDQKRGJ1">
+          Talk to our customer service one-on-one on whastapp{" "}
+          <a
+            target="blank"
+            rel="noopener noreferrer"
+            href="https://wa.me/message/MVX754UDQKRGJ1"
+          >
             here
           </a>
         </p>

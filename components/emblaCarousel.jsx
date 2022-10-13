@@ -51,6 +51,7 @@ const EmblaCarousel = () => {
                 width={400}
                 height={600}
                 loader={imageloader}
+                alt="flower vase"
               />
             </div>
           </div>
@@ -79,6 +80,7 @@ const EmblaCarousel = () => {
                 width={400}
                 height={500}
                 loader={imageloader}
+                alt="flower vase"
               />
             </div>
           </div>

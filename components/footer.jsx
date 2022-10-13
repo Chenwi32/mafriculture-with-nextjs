@@ -42,6 +42,7 @@ const Footer = () => {
           <div className="flex-a-c">
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href="https://web.facebook.com/MAfriculture"
               className={` mg-r ${styles.link}`}
             >
@@ -49,6 +50,7 @@ const Footer = () => {
             </a>
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href="https://www.instagram.com/mafriculture/"
               className={`mg-r ${styles.link}`}
             >
@@ -56,6 +58,7 @@ const Footer = () => {
             </a>
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href="https://twitter.com/ChenwiEugene"
               className={`mg-r ${styles.link}`}
             >
@@ -63,6 +66,7 @@ const Footer = () => {
             </a>
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href="https://www.pinterest.com/mafriculture/"
               className={`mg-r ${styles.link}`}
             >

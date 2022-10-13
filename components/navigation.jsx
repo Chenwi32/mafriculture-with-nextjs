@@ -26,6 +26,7 @@ const Navigation = () => {
                 width={40}
                 height={30}
                 loader={imageloader}
+                alt="mafriculture logo"
               />
             </div>
             <span className={styles.logo_tex}>MAfriculture</span>
