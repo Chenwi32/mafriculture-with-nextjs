@@ -32,6 +32,7 @@ a {
   display: flex;
 }
 
+
 .flex-a-c {
   display: flex;
   align-items: center;
@@ -52,9 +53,9 @@ a {
   justify-content: center;
 }
 
-.flex-j-c-sb {
+.flex-j-sb {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .flex-center {
@@ -93,6 +94,31 @@ a {
   margin-bottom: 1.5rem;
 }
 
+/*------ Small Margins ------*/
+.mg-s{
+  margin: .5rem;
+}
+.mg-s-h {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+.mg-s-v {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.mg-s-t {
+  margin-top: .5rem;
+}
+.mg-s-r {
+  margin-right: .5rem;
+}
+.mg-s-l {
+  margin-left: .5rem;
+}
+.mg-s-b {
+  margin-bottom: .5rem;
+}
+
 /*---- Padding ----*/
 .pd{
   padding: 1rem;
@@ -116,6 +142,31 @@ a {
 }
 .pd-b {
   padding-bottom: 1rem;
+}
+
+/*---- Small Padding ----*/
+.pd-s{
+  padding: .5rem;
+}
+.pd-s-h {
+  padding-right: .5rem;
+  padding-left: .5rem;
+}
+.pd-s-v {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+.pd-s-t {
+  padding-top: 1rem;
+}
+.pd-r {
+  padding-right: .5rem;
+}
+.pd-s-l {
+  padding-left: .5rem;
+}
+.pd-s-b {
+  padding-bottom: .5rem;
 }
 
 

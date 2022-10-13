@@ -1,0 +1,24 @@
+.social{
+    min-height: 100px;
+    position: relative;
+}
+
+.link{
+    font-size: 1.5em;
+    transition: .5s ease-in-out;
+}
+
+.link:hover{
+    transform: translateY(-.5rem);
+}
+.whatsapp{
+    position: fixed;
+    font-size: 1.5rem;
+    border-radius: 100%;
+    color: var(--complementry-color);
+    background-color: var(--secondary-color);
+    padding: .5rem .7rem;
+    
+    top: 70vh;
+    right: 4rem;
+}

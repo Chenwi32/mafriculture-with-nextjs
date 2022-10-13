@@ -1,8 +1,41 @@
+import styles from './compStyles/footer.module.css'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook, faInstagram, faPinterest, faTwitter, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+
+
 const Footer = () => {
   return (
-    <div>
-      <div className="container">
+    <div className="">
+      <div className={`container flex-j-sb flex-a-c ${""}`}>
         <h1>This is the footer</h1>
+
+        <div className={`flex-a-t flex_col ${styles.social}`}>
+
+          <p className='mg-s-b'>Follow us</p>
+
+          <div>
+            <a href="" className={` mg-r ${styles.link}`}>
+              <FontAwesomeIcon icon={faFacebook} />
+            </a>
+            <a href="" className={`mg-r ${styles.link}`}>
+              <FontAwesomeIcon icon={faInstagram} />
+            </a>
+            <a href="" className={`mg-r ${styles.link}`}>
+              <FontAwesomeIcon icon={faTwitter} />
+            </a>
+            <a href="" className={`mg-r ${styles.link}`}>
+              <FontAwesomeIcon icon={faPinterest} />
+            </a>
+          </div>
+          <a
+            href="https://wa.me/237655078817"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={` ${styles.link} ${styles.whatsapp}`}
+          >
+            <FontAwesomeIcon icon={faWhatsapp} />
+          </a>
+        </div>
       </div>
     </div>
   );

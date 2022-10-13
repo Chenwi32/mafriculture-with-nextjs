@@ -13,7 +13,7 @@ const HorizontalScrolling = () => {
 
 
   return (
-    <div className={` container `}>
+    <div className={` container  mg-v`}>
           <div className={` ${styles.h_scrolling} `}
           id='scroll_container'>
         <div className={styles.scroll_item}></div>
