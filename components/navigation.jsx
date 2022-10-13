@@ -12,6 +12,7 @@ const hamburgerClick = (e) => {
   const bar1 = document.getElementById('bar1')
   const bar2 = document.getElementById('bar2')
   const bar3 = document.getElementById('bar3')
+  const menu = document.getElementById('links')
 
     let value = bar1.classList.contains('bar1')
 
@@ -21,10 +22,12 @@ const hamburgerClick = (e) => {
       bar1.classList.remove("bar1");
       bar2.classList.remove("bar2");
       bar3.classList.remove("bar3");
+      menu.classList.add("colapse");
     } else {
       bar1.classList.add("bar1");
       bar2.classList.add("bar2");
       bar3.classList.add("bar3");
+      menu.classList.remove("colapse");
     };
 }
 
@@ -33,7 +36,7 @@ const Navigation = () => {
 
   return (
     <div className={styles.navigation}>
-      <div className={`${styles.nav_container} container flex pd-h`}>
+      <div className={`${styles.nav_container} container flex pd-h nav`}>
         <Link href="/">
           <div className={`${styles.logo_container} flex`}>
             <div className={styles.logo}>
@@ -48,7 +51,7 @@ const Navigation = () => {
             <span className={styles.logo_tex}>MAfriculture</span>
           </div>
         </Link>
-        <div className={styles.link}>
+        <div className={`${styles.links} colapse`} id='links'>
           <Link href="/products">
             <a className={styles.nav_link}>
               <FontAwesomeIcon
@@ -67,25 +70,22 @@ const Navigation = () => {
           </Link>
 
           <Link href="/products">
-            <a>
+            <a className={styles.nav_link}>
               <FontAwesomeIcon
                 icon={faCartPlus}
                 /* style={{ fontSize: 100, color: "blue" } */
               />
             </a>
           </Link>
-
-          <Link href="">
-            <div
-              className={`${styles.nav__bar__btn}`}
-              id="btn"
-              onClick={hamburgerClick}
-            >
-              <div className={`${styles.bar} `} id="bar1"></div>
-              <div className={`${styles.bar} `} id="bar2"></div>
-              <div className={`${styles.bar}`} id="bar3"></div>
-            </div>
-          </Link>
+        </div>
+        <div
+          className={`${styles.nav__bar__btn} hide`}
+          id="btn"
+          onClick={hamburgerClick}
+        >
+          <div className={`${styles.bar} `} id="bar1"></div>
+          <div className={`${styles.bar} `} id="bar2"></div>
+          <div className={`${styles.bar}`} id="bar3"></div>
         </div>
       </div>
     </div>

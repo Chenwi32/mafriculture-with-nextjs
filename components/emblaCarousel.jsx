@@ -105,10 +105,10 @@ const EmblaCarousel = () => {
                     <strong>Give The African Style A Try!</strong>
                   </p>
 
-                  <p className="feel hide" id="feel">
+                  <p className="feel " id="feel">
                     <strong>“FEEL THE ROYALTY”</strong>
                   </p>
-                  <p className="hide" id="priority">
+                  <p className="" id="priority">
                     <strong>
                       <em>Your Satisfaction, Our Priority!</em>
                     </strong>

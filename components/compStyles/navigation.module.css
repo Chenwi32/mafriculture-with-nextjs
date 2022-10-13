@@ -1,55 +1,77 @@
-.navigation{
-    color: var(--primary-color);
-   
-    font-size: .9rem;
+.navigation {
+  color: var(--primary-color);
+
+  font-size: 0.9rem;
+  
 }
 
-.nav_container{
-     padding: .7em 0 .7em .5em;
-    align-items: center;
-    justify-content: space-between;
+.nav_container {
+  padding: 0.7em 0 0.7em 0.5em;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
 }
 
-.logo_container{
-    align-items: center;
-    cursor: pointer;
-    
+.logo_container {
+  align-items: center;
+  cursor: pointer;
 }
 
-.logo{
-    background-color: var(--complementry-color);
+.logo {
+  background-color: var(--complementry-color);
 }
 
-.logo_tex{
-    margin: .2em;
-    color: var(--secondary-color);
-    font-weight: 600;
-    font-size: 1.4rem;
-    width: 20%;
+.logo_tex {
+  margin: 0.2em;
+  color: var(--secondary-color);
+  font-weight: 600;
+  font-size: 1.4rem;
+  width: 20%;
 }
 
-.nav_link{
-    margin: 0 1em 0 0;
+.nav_link {
+  margin: 0 1em 0 0;
 }
 
 /*------ Toggle menu -------*/
 .nav__bar__btn {
-    height: fit-content;
-    width: 45px;
-    padding: 0.2em 0.5em;
-    box-shadow: 0 0 5px rgba(15, 15, 15, 0.575);
-    border-radius: 5px;
+  height: fit-content;
+  width: 45px;
+  padding: 0.2em 0.5em;
+
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bar {
+  height: 3px;
+  width: 100%;
+  background-color: var(--secondary-color);
+  margin: 0.3rem;
+  transition: all 1s ease;
+}
+
+@media (max-width: 700px) {
+  .links {
+    position: fixed;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.bar{
-    height: 3px;
+    height: fit-content;
     width: 100%;
-    background-color: var(--secondary-color);
-    margin: 0.2rem;
-    transition: all 1s ease;
-}
+    background-color: var(--complementry-color);
+    top: 3.4rem;
+    left: 0;
+    z-index: 2;
+    padding: 0 1rem 1rem;
+    transition: 0.9s ease-in-out;
 
+    box-shadow: 0 5px 3px  0 rgba(0, 0, 0, 0.137);
+  }
+
+  .nav_link {
+    margin: 0.5rem 0 0;
+  }
+}

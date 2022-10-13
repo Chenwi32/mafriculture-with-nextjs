@@ -193,7 +193,7 @@ a {
 
 /*-------  Toggle menu ---------*/
 .bar1 {
-  transform: rotate(-45deg) translate(-7px, 7px);
+  transform: rotate(-45deg) translate(-.5rem, .2rem);
   width: 100%;
 }
 
@@ -202,8 +202,33 @@ a {
 }
 
 .bar3 {
-  transform: rotate(45deg) translate(-7px, -7px);
+  transform: rotate(45deg) translate(-.4rem, -.2em);
   width: 100%;
+}
+
+.hide{
+  display:  none;
+}
+
+
+@media (max-width: 700px) {
+    .hide {
+    display: block;
+}
+.nav .btn{
+  background-color: inherit;
+color: unset;
+text-align: left;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 5px;
+  max-width: unset;
+}
+
+.colapse{
+    top: -50%;
+    opacity: 0;
+}
 }
 
 @media (prefers-color-scheme: dark) {
