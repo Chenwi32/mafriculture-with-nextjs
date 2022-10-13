@@ -22,19 +22,17 @@ const Footer = () => {
           </p>
 
           <div className={`flex-a-c ${styles.footer_left_links}`}>
-            <Link href=''>
-              <a className="mg-r" >
-              <small>Terms & Conditions</small>
-            </a>
+            <Link href="">
+              <a className="mg-r">
+                <small>Terms & Conditions</small>
+              </a>
             </Link>
-            
-            <Link href=''>
+
+            <Link href="">
               <a>
-              <small>Privacy Policy</small>
-            </a>
+                <small>Privacy Policy</small>
+              </a>
             </Link>
-            
-            
           </div>
         </div>
 
@@ -42,16 +40,32 @@ const Footer = () => {
           <small className="mg-s-b">Follow us</small>
 
           <div className="flex-a-c">
-            <a href="" className={` mg-r ${styles.link}`}>
+            <a
+              target="_blank"
+              href="https://web.facebook.com/MAfriculture"
+              className={` mg-r ${styles.link}`}
+            >
               <FontAwesomeIcon icon={faFacebook} />
             </a>
-            <a href="" className={`mg-r ${styles.link}`}>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/mafriculture/"
+              className={`mg-r ${styles.link}`}
+            >
               <FontAwesomeIcon icon={faInstagram} />
             </a>
-            <a href="" className={`mg-r ${styles.link}`}>
+            <a
+              target="_blank"
+              href="https://twitter.com/ChenwiEugene"
+              className={`mg-r ${styles.link}`}
+            >
               <FontAwesomeIcon icon={faTwitter} />
             </a>
-            <a href="" className={`mg-r ${styles.link}`}>
+            <a
+              target="_blank"
+              href="https://www.pinterest.com/mafriculture/"
+              className={`mg-r ${styles.link}`}
+            >
               <FontAwesomeIcon icon={faPinterest} />
             </a>
           </div>

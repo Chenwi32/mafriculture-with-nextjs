@@ -1,7 +1,19 @@
-.newest_text{
-    width: 50%;
+.newest_text {
+  width: 50%;
 }
 
-.newest_image{
-    width: 50%;
+.newest_image {
+  width: 50%;
+}
+
+@media (max-width: 900px) {
+  .newest_container {
+    flex-direction: column-reverse;
+  }
+
+  .newest_text ,
+  .newest_image {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
