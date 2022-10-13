@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <div className="">
       <div className={`container flex flex-j-sb flex-a-c ${styles.footer_container}`}>
-        <div className={`flex-a-b flex-j-sb flex ${styles.footer_left}`}>
+        <div className={`flex  flex-j-sb  ${styles.footer_left}`}>
           <p>
             <small>
               Copyright &#x00A9; MAfriculture<sup>&#x00AE;</sup> 2022{" "}
@@ -21,7 +21,7 @@ const Footer = () => {
             | <small>All rights reserved</small>
           </p>
 
-          <div className={`flex-a-c flex ${styles.footer_left_links}`}>
+          <div className={`flex flex-a-c  ${styles.footer_left_links}`}>
             <Link href="">
               <a className="mg-r">
                 <small>Terms & Conditions</small>
@@ -36,10 +36,10 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className={`flex-a-t flex flex_col mg-s-b pd-s-v ${styles.social}`}>
+        <div className={` flex flex-a-t  flex_col mg-s-b pd-s-v ${styles.social}`}>
           <small className="mg-s-b">Follow us</small>
 
-          <div className="flex-a-c flex">
+          <div className="flex flex-a-c ">
             <a
               target="_blank"
               rel="noopener noreferrer"

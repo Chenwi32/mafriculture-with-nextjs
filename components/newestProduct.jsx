@@ -5,7 +5,7 @@ import styles from "./compStyles/newest.module.css";
 
 const NewestProduct = () => {
   return (
-    <div className={`container flex-a-t mg-v pd ${styles.newest_container}`}>
+    <div className={`container flex-a-t flex mg-v pd ${styles.newest_container}`}>
       <div className={` ${styles.newest_image}`}>
         <Image
           src="newest.jpg"
