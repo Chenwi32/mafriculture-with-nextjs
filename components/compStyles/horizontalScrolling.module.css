@@ -6,6 +6,7 @@
     overscroll-behavior-inline: contain;
     scroll-snap-type: inline mandatory;
     scroll-padding: 1rem;
+    padding: 0 1rem ;
 } 
 
 /* 
@@ -19,7 +20,11 @@ Removing scroll bar
 } 
 
 .scroll_item{
-    background-color: pink;
+      background: linear-gradient(
+    to bottom,
+    rgba(236, 31, 4, 0.322),
+    rgba(199, 28, 5, 0.103)
+  );
     min-height: 200px;
     min-width: 200px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.336);

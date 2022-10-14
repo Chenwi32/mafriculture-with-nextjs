@@ -21,14 +21,15 @@ export default function Home() {
         <NewestProduct />
 
         <div className=" container mg-v ">
-          <p className="mg-s-b">
-            Have you seen these awesome vases yet?
-          </p>
+          <h2 className={`mg-b ${""}`}>Featured Products</h2>
+
+          <p className="mg-s-b">Have you seen these awesome vases from our collection yet?</p>
 
           <HorizontalScrolling />
         </div>
 
         <div className="container mg-v">
+          <h2 className={`mg-b ${""}`}>Feedback from our Customers</h2>
           <p>
             We take so much pride in the satisfaction of our clients, it is our
             top priority.

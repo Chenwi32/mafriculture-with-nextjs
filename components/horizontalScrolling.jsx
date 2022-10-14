@@ -6,7 +6,7 @@ import styles from "./compStyles/horizontalScrolling.module.css";
 const HorizontalScrolling = () => {
 
   return (
-    <div className={` container `}>
+    <div className={``}>
           <div className={` ${styles.h_scrolling} `}
           id='scroll_container'>
         <div className={styles.scroll_item}></div>

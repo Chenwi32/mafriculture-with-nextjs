@@ -1,12 +1,15 @@
 .embla {
   overflow: hidden;
   width: 100%;
+
+  box-shadow: 0 5px 5px  0 rgba(0, 0, 0, 0.123);
 }
 
 .embla__container {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+  
 }
 
 .embla__slide {
@@ -41,6 +44,7 @@ background:
   font-size: 1.5rem;
   color: var(--complementry-color);
   padding: 1em;
+   
 }
 
 .embla__slide3{
@@ -128,7 +132,9 @@ background:
 
 
 @media (max-width: 700px){
-
+.embla {
+    margin-top: 2.5rem;
+}
   .embla__slide_container {
 display: block;
 position: relative;

@@ -12,9 +12,9 @@ const Fromclients = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel(
     {
       loop: true,
-      speed: 10,
+      speed: 1,
     },
-    [Autoplay({ delay: 3000, stopOnInteraction: false })]
+    [Autoplay({ delay: 1000, stopOnInteraction: false })]
   );
 
   useEffect(() => {
