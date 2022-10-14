@@ -1,15 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
 import EmblaCarousel from "../components/emblaCarousel";
+import Fromclients from "../components/fromclients";
 import HorizontalScrolling from "../components/horizontalScrolling";
 import NewestProduct from "../components/newestProduct";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
-
-
-  
-
   return (
     <div className={styles.container}>
       <Head>
@@ -21,9 +18,28 @@ export default function Home() {
       <div>
         <EmblaCarousel />
 
-        <NewestProduct/>
+        <NewestProduct />
 
-        <HorizontalScrolling/>
+        <div className=" container mg-v ">
+          <p className="mg-s-b">
+            Have you seen these awesome vases yet?
+          </p>
+
+          <HorizontalScrolling />
+        </div>
+
+        <div className="container mg-v">
+          <p>
+            We take so much pride in the satisfaction of our clients, it is our
+            top priority.
+          </p>
+          <p className="mg-s-b">
+            {" "}
+            These images came in from our satisfied customers:
+          </p>
+
+          <Fromclients />
+        </div>
       </div>
     </div>
   );

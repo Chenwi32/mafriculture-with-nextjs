@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // imports icons for this component
 import { faSearch, faCartPlus } from "@fortawesome/free-solid-svg-icons";
 
-const hamburgerClick = (e) => {
+const hamburgerClick = () => {
 
   const bar1 = document.getElementById('bar1')
   const bar2 = document.getElementById('bar2')
