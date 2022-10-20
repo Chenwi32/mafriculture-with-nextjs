@@ -8,9 +8,11 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
+  
+      <Layout>
      { <Component {...pageProps} />}
     </Layout>
+    
   );
 }
 

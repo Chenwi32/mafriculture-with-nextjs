@@ -12,7 +12,7 @@ const EmblaCarousel = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel(
     {
       loop: false,
-      speed: 10,
+      speed: 5,
     },
     [Autoplay({ delay: 5000, stopOnInteraction: false })]
   );

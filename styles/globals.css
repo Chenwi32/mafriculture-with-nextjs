@@ -28,6 +28,12 @@ a {
   margin: auto;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -50,6 +56,10 @@ a {
 
 .flex-j-sb {
   justify-content: space-between;
+}
+
+.flex-j-r {
+  justify-content: flex-end;
 }
 
 .flex-center {
@@ -210,16 +220,23 @@ a {
   display: none;
 }
 
-@media (max-width: 1230px) {
-.container {
-  padding: 0 1rem;
-}
+.drop_down {
+  top: -50%;
+   opacity: 0;
+
 }
 
+.drop_down a {
+  margin:0 0 1rem;
+}
+
+@media (max-width: 1230px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
 
 @media (max-width: 700px) {
-
-
   .hide {
     display: block;
   }

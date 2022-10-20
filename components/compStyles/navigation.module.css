@@ -28,8 +28,29 @@ background-color: rgba(255, 255, 255, 0.945);
   width: 20%;
 }
 
+  .links {
+    width: 50%;
+  }
+
 .nav_link {
   margin: 0 1em 0 0;
+}
+
+.drop_down_menu{
+  top: 3rem;
+   position: fixed;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: 100%;
+  padding: 1rem 2rem;
+  margin: auto;
+  max-width: 1200px;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.973);
+  color: #fff;
+  align-items: flex-start;
+  transition: .5s ease-in-out;
 }
 
 /*------ Toggle menu -------*/
@@ -50,7 +71,7 @@ background-color: rgba(255, 255, 255, 0.945);
   width: 100%;
   background-color: var(--secondary-color);
   margin: 0.3rem;
-  transition: all 1s ease;
+  transition: all .5s ease-in-out;
 }
 
 @media (max-width: 700px) {
@@ -68,12 +89,12 @@ background-color: rgba(255, 255, 255, 0.945);
     flex-direction: column;
     height: fit-content;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.945);;
+    background-color: rgba(255, 255, 255, 0.945);
     top: 2rem;
     left: 0;
     z-index: 2;
     padding: 0 1rem 1rem;
-    transition: 0.9s ease-in-out;
+    transition: 0.5s ease-in-out;
 
     box-shadow: 0 5px 4px  0 rgba(0, 0, 0, 0.137);
   }
