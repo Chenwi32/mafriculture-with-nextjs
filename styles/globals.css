@@ -220,16 +220,6 @@ a {
   display: none;
 }
 
-.drop_down {
-  top: -50%;
-   opacity: 0;
-
-}
-
-.drop_down a {
-  margin:0 0 1rem;
-}
-
 @media (max-width: 1230px) {
   .container {
     padding: 0 1rem;

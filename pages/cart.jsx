@@ -1,8 +1,45 @@
+
+import { FlutterWaveButton } from "flutterwave-react-v3";
 import Link from "next/link";
 import CartItem from "../components/cartItem";
 import { useStateValue } from "../libs/stateProvider";
 
+
+
+
+
+
 const Cart = () => {
+
+const config = {
+  public_key: "FLWPUBK_TEST-d74bfa1e066a40c715e80ace1e8c74a6-X",
+  tx_ref: Date.now(),
+  amount: 100,
+  currency: "XAF",
+  payment_options: "card,mobilemoney,ussd",
+  customer: {
+    email: "user@gmail.com",
+    phone_number: "070********",
+    name: "john doe",
+  },
+  customizations: {
+    title: "my Payment Title",
+    description: "Payment for items in cart",
+    logo: "https://st2.depositphotos.com/4403291/7418/v/450/depositphotos_74189661-stock-illustration-online-shop-log.jpg",
+  },
+};
+  
+    const fwConfig = {
+      ...config,
+      text: "Pay with Flutterwave!",
+      callback: (response) => {
+        console.log(response);
+        closePaymentModal(); // this will close the modal programmatically
+      },
+      onClose: () => {},
+    };
+  
+
   const { basket } = useStateValue()[0];
 
   return (
@@ -14,7 +51,7 @@ const Cart = () => {
           ) : (
             <div>
               Your shopping cart is empty. Go shopping{" "}
-              <Link href='/products'>
+              <Link href="/products">
                 <button className="btn">Shop now</button>
               </Link>
             </div>
@@ -36,6 +73,8 @@ const Cart = () => {
           </div>
         </div>
       </div>
+
+      {<FlutterWaveButton {...fwConfig} />}
     </div>
   );
 };

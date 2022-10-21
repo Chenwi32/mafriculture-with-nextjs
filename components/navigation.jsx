@@ -65,17 +65,45 @@ const Navigation = () => {
             </a>
           </Link>
 
-          <Link href="/products">
-            <a className={styles.nav_link}
-              onMouseOver={() => {
-                const drop_down = document.getElementById("drop_down");
-                if (drop_down.classList.contains('drop_down')) {
-                  drop_down.classList.remove("drop_down");
-                }
-            }}
-            
-            >Products &#x1F53D;</a>
-          </Link>
+          <a className={`${styles.nav_link} ${styles.main_li}`}>
+            <span className={styles.product_link_text}>Products </span>
+            <span className={styles.product_link_chevron}>&#118;</span>
+            <div className={`${styles.sub_menu1}`}>
+              <ul>
+                <li>
+                  <Link href="/products">
+                    <a >Clay Products</a>
+                  </Link>
+                </li>
+
+                <li>
+                  <Link href="/products">
+                    <a >Wood Products</a>
+                  </Link>
+                </li>
+                
+                <li>
+                  <Link href="/products">
+                    <a >Basketry</a>
+                  </Link>
+                </li>
+
+                <li>
+                  <Link href="/products">
+                    <a >Plastic Products</a>
+                  </Link>
+                </li>
+
+                
+
+                <li>
+                  <Link href="/products">
+                    <a >Beats</a>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </a>
 
           <Link href="/products">
             <a className={`${styles.nav_link} btn`}>Contact</a>
@@ -98,33 +126,13 @@ const Navigation = () => {
         </div>
 
         <div
-          className={`${styles.nav__bar__btn} hide`}
+          className={` ${styles.nav__bar__btn} hide `}
           id="btn"
           onClick={hamburgerClick}
         >
           <div className={`${styles.bar} `} id="bar1"></div>
           <div className={`${styles.bar} `} id="bar2"></div>
           <div className={`${styles.bar}`} id="bar3"></div>
-        </div>
-
-        <div className={`${styles.drop_down_menu} drop_down`} id="drop_down"
-        >
-          <Link href="/products">
-            <a className={styles.drop_link}>Ceramics Products</a>
-          </Link>
-
-          <Link href="/products">
-            <a className={`${styles.drop_link}`}>Wood Products</a>
-          </Link>
-          <Link href="/products">
-            <a className={`${styles.drop_link}`}>Fiber Products</a>
-          </Link>
-          <Link href="/products">
-            <a className={`${styles.drop_link}`}>Plastic Products</a>
-          </Link>
-          <Link href="/products">
-            <a className={`${styles.drop_link}`}>Beats</a>
-          </Link>
         </div>
       </div>
     </div>
