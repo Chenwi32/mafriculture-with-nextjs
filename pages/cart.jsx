@@ -4,6 +4,8 @@ import Link from "next/link";
 import CartItem from "../components/cartItem";
 import { useStateValue } from "../libs/stateProvider";
 
+import styles from '../styles/cart.module.css'
+
 
 
 
@@ -43,7 +45,7 @@ const config = {
   const { basket } = useStateValue()[0];
 
   return (
-    <div className="checkout container flex__col">
+    <div className={`checkout container flex__col ${styles.cart} `}>
       <div className="flex checkout__main">
         <h2 className="checkout__title">
           {basket.length > 0 ? (

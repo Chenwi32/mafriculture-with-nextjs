@@ -245,6 +245,11 @@ a {
     opacity: 0;
   }
 
+  .grid {
+  display: flex;
+  flex-direction: column;
+}
+
  
 }
 
