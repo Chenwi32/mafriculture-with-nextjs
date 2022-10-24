@@ -79,11 +79,16 @@
 }
 
 @media (max-width: 670px) {
+  .footer {
+    padding-bottom: .5rem;
+  }
+
   .footer_left {
     flex-direction: column-reverse;
     align-items: flex-start;
     width: 100%;
   }
+
   .footer_left_links {
     margin-bottom: 1rem;
   }

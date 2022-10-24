@@ -43,11 +43,14 @@ const Product = ({ id, title, image, price, rating, reviews }) => {
             <strong> {price}</strong>
           </p>
 
-          <button onClick={addToCart} className={`${styles.addtocart} btn`}>
+          <div className={`${ styles.buttons} flex flex-a-b mg-s-t `}>
+            <button onClick={addToCart} className={`${styles.addtocart} btn`}>
             Add to cart
           </button>
 
           <button>Learn more</button>
+          </div>
+          
         </div>
       </div>
     );

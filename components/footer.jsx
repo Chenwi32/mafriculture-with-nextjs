@@ -11,7 +11,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="">
+    <div className={styles.footer}>
       <div
         className={`container flex flex-j-sb flex-a-c ${styles.footer_container}`}
       >
