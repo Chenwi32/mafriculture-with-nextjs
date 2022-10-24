@@ -1,12 +1,12 @@
 .navigation {
   color: var(--primary-color);
-background-color: rgba(255, 255, 255, 0.945);
+background-color: var(--complementry-color);
   font-size: 0.9rem;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
 }
 
 .nav_container {
@@ -44,34 +44,27 @@ background-color: rgba(255, 255, 255, 0.945);
 /*Sub-menu1 Styling*/
 
 .main_li{
-       position: relative;
        cursor: context-menu;
        display: flex;
        align-items: center;
+       padding: .5rem;
+       
 }
 
 .sub_menu1{
-    display: none;
-    z-index: 3;
-    width: 100%;
+  position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100vw;
     transition: .5s ease-in-out;
+    background-color: var(--complementry-color);
+    z-index: -2;
+    padding: 1rem 2rem;
 }
 
  .main_li:hover .sub_menu1{
-     margin-top: 0.5em;
-       position: fixed;
-        display: block; 
-          width: 70vw;
-}
-
-
- .main_li:hover .sub_menu1 ul{
-    background-color: var(--complementry-color);
-            position: absolute;
-             padding:  1em;
-             display: block;
-              margin: 0 1.5em;
-              top: 0.3rem;
+        top: 2rem;
+        left: 0;
 }
 
 .product_link_text{
@@ -79,7 +72,8 @@ background-color: rgba(255, 255, 255, 0.945);
 }
 
 .product_link_chevron{
-  font-size: .7rem;
+  font-size: .9rem;
+  font-weight: 800;
 }
 
 .sub_menu1 ul li{
@@ -123,7 +117,7 @@ background-color: rgba(255, 255, 255, 0.945);
     flex-direction: column;
     height: fit-content;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.945);
+    background-color: var(--complementry-color);
     top: 2rem;
     left: 0;
     z-index: 2;
@@ -136,4 +130,30 @@ background-color: rgba(255, 255, 255, 0.945);
   .nav_link {
     margin: 0.5rem 0 0;
   }
+
+  .main_li{
+       padding: 0;
+       position: relative;
+       
+}
+
+
+.sub_menu1{
+  position: absolute;
+    top: -1000px;
+    opacity: 0;
+    left: 3.5rem;
+    width: fit-content;
+    background-color: var(--complementry-color);
+    z-index: auto;
+    padding: 1rem;
+}
+
+
+ .main_li:hover .sub_menu1{
+        top: 1rem;
+      left: 3.5rem;
+      opacity: 1;
+}
+
 }

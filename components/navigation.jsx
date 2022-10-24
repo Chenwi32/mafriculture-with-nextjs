@@ -65,9 +65,9 @@ const Navigation = () => {
             </a>
           </Link>
 
-          <a className={`${styles.nav_link} ${styles.main_li}`}>
+          <div className={`${styles.nav_link} ${styles.main_li}`}>
             <span className={styles.product_link_text}>Products </span>
-            <span className={styles.product_link_chevron}>&#118;</span>
+            <span className={styles.product_link_chevron}>&#x1F53D;</span>
             <div className={`${styles.sub_menu1}`}>
               <ul>
                 <li>
@@ -103,7 +103,7 @@ const Navigation = () => {
                 </li>
               </ul>
             </div>
-          </a>
+          </div>
 
           <Link href="/products">
             <a className={`${styles.nav_link} btn`}>Contact</a>
