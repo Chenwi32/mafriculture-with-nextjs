@@ -43,13 +43,13 @@ const Navigation = () => {
             <div className={styles.logo}>
               <Image
                 src="logo.jpg"
-                width={40}
-                height={30}
+                width={30}
+                height={25}
                 loader={imageloader}
                 alt="mafriculture logo"
               />
             </div>
-            <span className={styles.logo_tex}>MAfriculture</span>
+            <span className={styles.logo_tex}>Mafriculture</span>
           </div>
         </Link>
         <div

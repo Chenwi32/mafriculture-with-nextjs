@@ -22,15 +22,14 @@ background-color: var(--complementry-color);
 }
 
 .logo {
-  background-color: var(--complementry-color);
+  margin-right: .3rem;
+  border-radius: 50%;
 }
 
 .logo_tex {
   margin: 0.2em;
   color: var(--secondary-color);
-  font-weight: 600;
   font-size: 1.4rem;
-  width: 20%;
 }
 
   .links {
