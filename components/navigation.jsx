@@ -49,7 +49,7 @@ const Navigation = () => {
                 alt="mafriculture logo"
               />
             </div>
-            <span className={styles.logo_tex}>Mafriculture</span>
+            <span className={styles.logo_tex}>mafriculture</span>
           </div>
         </Link>
         <div

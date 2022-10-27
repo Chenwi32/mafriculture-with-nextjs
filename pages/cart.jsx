@@ -1,5 +1,5 @@
 
-import { FlutterWaveButton } from "flutterwave-react-v3";
+/* import { FlutterWaveButton } from "flutterwave-react-v3"; */
 import Link from "next/link";
 import CartItem from "../components/cartItem";
 import { useStateValue } from "../libs/stateProvider";
@@ -45,7 +45,7 @@ const config = {
   const { basket } = useStateValue()[0];
 
   return (
-    <div className={`checkout container flex__col ${styles.cart} `}>
+    <div className={`${styles.cart}  checkout container flex__col  `}>
       <div className="flex checkout__main">
         <h2 className="checkout__title">
           {basket.length > 0 ? (
@@ -76,7 +76,7 @@ const config = {
         </div>
       </div>
 
-      {<FlutterWaveButton {...fwConfig} />}
+      {/* {<FlutterWaveButton {...fwConfig} />} */}
     </div>
   );
 };

@@ -6,7 +6,7 @@ const nextConfig = {
     loader: "custom",
   },
 
-  exportTrailingSlash: true
+  trailingSlash: true,
 };
 
 module.exports = nextConfig

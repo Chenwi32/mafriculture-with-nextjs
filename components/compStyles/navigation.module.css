@@ -40,6 +40,14 @@ background-color: var(--complementry-color);
   margin: 0 1em 0 0;
 }
 
+.cart{
+  transition: .5s ease-in-out;
+}
+
+.cart:hover{
+  transform: translateX(10px);
+}
+
 /*Sub-menu1 Styling*/
 
 .main_li{

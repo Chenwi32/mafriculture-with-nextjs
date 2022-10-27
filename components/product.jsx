@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import imageLoader from "../imageLoader";
 import { useStateValue } from "../libs/stateProvider";
 
@@ -48,7 +49,11 @@ const Product = ({ id, title, image, price, rating, reviews }) => {
             Add to cart
           </button>
 
-          <button>Learn more</button>
+            
+            <Link href='/productPage' >
+              <button>Learn more</button>
+            </Link>
+          
           </div>
           
         </div>

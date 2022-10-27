@@ -18,8 +18,6 @@ export default function Home() {
       <div>
         <EmblaCarousel />
 
-        <ChakraBox />
-
         <NewestProduct />
 
         <div className=" container mg-v ">
