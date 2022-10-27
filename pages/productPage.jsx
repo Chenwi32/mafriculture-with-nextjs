@@ -72,7 +72,7 @@ export default function Hero() {
           <Flex justifyContent="center" textAlign="left">
             <UnorderedList>
               <ListItem>Height: 40cm</ListItem>
-              <ListItem>Uses ChakraUI for UI.</ListItem>
+              <ListItem>Color: customizable. <br /> Chose a color</ListItem>
             </UnorderedList>
           </Flex>
         </Stack>
