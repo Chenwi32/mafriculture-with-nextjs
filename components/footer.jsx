@@ -80,7 +80,7 @@ const Footer = () => {
 
           <div className={`${styles.hover__message}`}>
             <a
-              href="https://wa.me/237655078817"
+              href="https://wa.me/237651395832"
               target="_blank"
               rel="noopener noreferrer"
               className={` ${styles.link} ${styles.whatsapp}`}
